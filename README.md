@@ -1,20 +1,14 @@
-# 🚀 A Placeholder Page
+# Placeholder Page
 
-This is a placeholder page for you to start vide coding or deployment using the VM's SSH terminal.
+## Build and Push to Docker Hub
 
-## 📍 Your Assigned Port
+```bash
+docker build -t hazelgallery/place-holder-page .
+docker push hazelgallery/place-holder-page
+```
 
-**This page is currently running on port: [PORT_PLACEHOLDER]**
+## Pull and Run from Docker Hub
 
-## 🛠️ Getting Started
-
-1. **Connect to your SSH terminal**
-2. **Pull your application from Github, or make a folder to start vide coding (we strongly recommend Claude Code)** 
-3. **Once you finish your codes, ensure to start your server in the above assigned port**
-
-Note: you might need to kill the port first before starting your own app.
-
-
----
-
-**Happy coding! 🎉**
+```bash
+docker run -p 8510:80 -e PORT=8510 hazelgallery/place-holder-page
+```
