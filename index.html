@@ -100,7 +100,8 @@
         </div>
         
         <div class="note">
-            <strong>Note:</strong> you might need to kill the port first before starting your own app.
+            <strong>Note:</strong> you might need to kill the port first before starting your own app.<br>
+            To terminate this docker container: <code>docker stop $(docker ps -q --filter "publish=[PORT_PLACEHOLDER]")</code>
         </div>
         
         <hr>
